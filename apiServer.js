@@ -9,6 +9,17 @@ const mascots = [
 const app = express();
 const PORT = process.env.PORT ?? 3000;
 
+app.use(express.json());
+
+const oneWayTicket = (req, res, next) => {
+    if (req.method !== 'GET') {
+        res.status(405).send("We're only open for business on GET");
+        return;
+    }
+    next();
+};
+
+app.use(oneWayTicket);
 
 app.get("/api/mascots", (req, res) => {
     res.json(mascots);
