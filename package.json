@@ -1,12 +1,15 @@
 {
   "name": "server-practice",
   "version": "1.0.0",
-  "description": "getting acquainted with creating simple web servers with node",
+  "description": "getting acquainted with creating simple web servers with node and moving on to express",
   "license": "ISC",
   "author": "LT",
   "type": "module",
   "main": "planets.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }

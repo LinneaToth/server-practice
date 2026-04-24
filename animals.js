@@ -39,7 +39,7 @@ const animalAtIndex = (res, url) => {
     const index = Number(url.slice(9));
 
     if (Number.isNaN(index) || index >= animals.length || index < 0) {
-        res.writeHead(400, { "content-type": "text/plain; charset: utf-8" });
+        res.writeHead(404, { "content-type": "text/plain; charset: utf-8" });
         res.end("We don't have that animal in store");
         return;
     }
