@@ -2,7 +2,7 @@
 
 A collection of servers built with Node.js and Express.js for learning purposes.
 
-## What I practiced
+## Focus & takeaways
 
 - Built an HTTP server from scratch using Node's native `http` module (no frameworks)
 - Migrated to Express for cleaner routing with `app.get()` and route handlers
@@ -12,4 +12,4 @@ A collection of servers built with Node.js and Express.js for learning purposes.
 - Filtered resources with query params on a dedicated `/search` route
 - Wrote custom middleware to reject non-GET methods with a `405` status
 - Used Express 5's wildcard catch-all `/{*path}` for a clean 404 fallback
-- Validated user input and returned appropriate HTTP status codes (200, 404, 405)
+- Validated user input and returned appropriate HTTP status codes 
